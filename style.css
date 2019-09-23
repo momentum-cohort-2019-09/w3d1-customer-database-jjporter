@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    margin-top: 2rem;
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    margin-left: 5rem;
+}
+
+#customers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img{
+    border-radius: 50% 70%;
+}
+
+.person{
+    text-align: center;
+    width: 20vw;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.person-name{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.email{
+    color: gray;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.address{
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+.cell{
+    margin-bottom: 0.5rem;
+}
