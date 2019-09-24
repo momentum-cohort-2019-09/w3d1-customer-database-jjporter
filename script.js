@@ -6,7 +6,7 @@ function customerToHtml (customer) {
         <img src=${customer.picture.large}>
         <div class="person-name">${capitalize(customer.name.first)} ${capitalize(customer.name.last)}</div>
         <div class="email">${customer.email}</div>
-        <div class="address">${capitalize(customer.location.street)},<br> ${capitalize(customer.location.city)}, ${capitalize(customer.location.state)}, ${customer.location.postcode}</div>
+        <div class="address">${capitalize(customer.location.street)},<br> ${capitalize(customer.location.city)}, ${capitalize(nameToAbbr((customer.location.state)))}, ${customer.location.postcode}</div>
         <div class="phone">Phone: ${customer.phone}</div>
         <div class="cell"> Cell: ${customer.cell}</div>
         <div class="dob">DOB: ${moment(customer.dob).format('MMM Do YYYY')}</div>
